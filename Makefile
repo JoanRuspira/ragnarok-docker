@@ -11,6 +11,7 @@ help-me:
 	@echo - launch-server
 	@echo - run-server
 	@echo - update-server
+	@echo - stop-server
 
 build-server-container-image: 
 	docker build -t jro -f Dockerfile .
