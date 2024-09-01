@@ -4,13 +4,13 @@
 1 - Clone the solution in this repo
 
 2 - cd to /docker and build the Docker image, start the container and access it
-      make build-server-container-image
-      make run-server-container
-      make access-server-container
+       - make build-server-container-image
+       - make run-server-container
+       - make access-server-container
 
 3 - Run one of the commands
-      make launch-server
-      make run-server
+      - make launch-server
+      - make run-server
 
 
 ### The server is up now

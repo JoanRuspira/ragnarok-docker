@@ -7,7 +7,6 @@ help-me:
 	@echo - restart-server-container
 	@echo - delete-server-container
 	@echo - delete-server-container-image
-	@echo Run one of the following when inside the container
 	@echo - launch-server
 	@echo - run-server
 	@echo - update-server
@@ -35,15 +34,15 @@ delete-server-container-image:
 	docker image rm jro
 
 launch-server:
-	./launch_server.sh
-
+	docker exec ragnarok ./launch_server.sh
+	
 run-server:
-	./run_server.sh
-
+	docker exec ragnarok ./run_server.sh
+	
 update-server:
-	./update_server.sh 
-
+	docker exec ragnarok ./update_server.sh 
+	
 stop-server:
-	pkill login-server
-	pkill char-server
-	pkill map-server
+	docker exec pkill login-server
+	docker exec pkill char-server
+	docker exec pkill map-server
